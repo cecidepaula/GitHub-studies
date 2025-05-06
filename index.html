@@ -1,51 +1,27 @@
-<nav>
-  <ul>
-    <li><a href="index.html">Introducao ao Git e Github</a></li>
-    <li><a href="pagina2.html">Trabalhando com Repositorios</a></li>
-    <li><a href="pagina3.html">Funcionalidades de Colaboracao</a></li>
-  </ul>
-</nav>
-
-<style>
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    background-color: #f4f4f4;
-  }
-
-  nav ul li {
-    margin: 0 10px;
-  }
-
-  nav ul li a {
-    text-decoration: none;
-    padding: 10px 20px;
-    display: block;
-    color: #333;
-  }
-
-  nav ul li a:hover {
-    background-color: #ddd;
-  }
-</style>
-
-<nav>
-  <ul>
-    <li><a href="#" onclick="showTab('index')">Introducao ao Git e Github</a></li>
-    <li><a href="#" onclick="showTab('pagina2')">Trabalhando com Repositorios</a></li>
-    <li><a href="#" onclick="showTab('pagina2')">Funcionalidades de Colaboracao</a></li>
-  </ul>
-</nav>
-
-<div id="index" class="tab">Introducao ao Git e Github</div>
-<div id="pagina2" class="tab" style="display:none;">Sobre nós...</div>
-<div id="pagina3" class="tab" style="display:none;">Entre em contato.</div>
-
-<script>
-  function showTab(tabId) {
-    const tabs = document.querySelectorAll('.tab');
-    tabs.forEach(tab => tab.style.display = 'none');
-    document.getElementById(tabId).style.display = 'block';
-  }
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Home</title>
+</head>
+<body>
+  <header>
+    <h1>Meu Site Minimalista</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">Sobre</a></li>
+      <li><a href="services.html">Serviços</a></li>
+      <li><a href="projects.html">Projetos</a></li>
+      <li><a href="contact.html">Contato</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>Bem-vindo à Home!</h2>
+    <p>Esta é a página inicial do meu site minimalista.</p>
+  </main>
+</body>
+</html>
