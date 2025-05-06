@@ -5,3 +5,47 @@
     <li><a href="pagina3.html">Funcionalidades de Colaboracao</a></li>
   </ul>
 </nav>
+
+<style>
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    background-color: #f4f4f4;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    color: #333;
+  }
+
+  nav ul li a:hover {
+    background-color: #ddd;
+  }
+</style>
+
+<nav>
+  <ul>
+    <li><a href="#" onclick="showTab('pagina1')">Indtroducao ao Git e Github</a></li>
+    <li><a href="#" onclick="showTab('pagina2')">Trabalhando com Repositorios</a></li>
+    <li><a href="#" onclick="showTab('pagina2')">Funcionalidades de Colaboracao</a></li>
+  </ul>
+</nav>
+
+<div id="pagina1" class="tab">Bem-vindo à Home!</div>
+<div id="pagina2" class="tab" style="display:none;">Sobre nós...</div>
+<div id="pagina3" class="tab" style="display:none;">Entre em contato.</div>
+
+<script>
+  function showTab(tabId) {
+    const tabs = document.querySelectorAll('.tab');
+    tabs.forEach(tab => tab.style.display = 'none');
+    document.getElementById(tabId).style.display = 'block';
+  }
+</script>
